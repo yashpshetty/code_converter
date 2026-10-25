@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:7863/ -->
+<html lang="en" style="
+		margin: 0;
+		padding: 0;
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+	"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta property="og:title" content="Gradio">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="{url}">
+		<meta property="og:description" content="Click to try out the app!">
+		<meta property="og:image" content="https://raw.githubusercontent.com/gradio-app/gradio/main/js/_website/src/lib/assets/img/header-image.jpg">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:creator" content="@Gradio">
+		<meta name="twitter:title" content="Gradio">
+		<meta name="twitter:description" content="Click to try out the app!">
+		<meta name="twitter:image" content="https://raw.githubusercontent.com/gradio-app/gradio/main/js/_website/src/lib/assets/img/header-image.jpg">
+
+		<style>
+			:root {
+				--bg: white;
+				--col:   #27272a;
+				--bg-dark: #0f0f11;
+				--col-dark: #f4f4f5;
+			}
+
+
+			body {
+				background: var(--bg);
+				color: var(--col);
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			@media (prefers-color-scheme: dark) {
+				body {
+					background: var(--bg-dark);
+					color: var(--col-dark);
+				}
+			}
+		</style>
+
+		<meta property="og:url" content="https://gradio.app/">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="">
+		<meta property="og:title" content="Gradio">
+		<meta property="og:description" content="">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:creator" content="@teamGradio">
+		<meta name="twitter:title" content="Gradio">
+		<meta name="twitter:description" content="">
+		<meta name="twitter:image" content="">
+
+		<script>window.gradio_config = {"version":"6.8.0","api_prefix":"/gradio_api","mode":"blocks","app_id":10801059824712045582,"dev_mode":false,"vibe_mode":false,"analytics_enabled":true,"components":[{"id":31,"type":"markdown","props":{"value":"## LLM Code Converter","show_label":false,"rtl":false,"latex_delimiters":[{"left":"$$","right":"$$","display":true}],"visible":true,"elem_classes":[],"preserved_by_key":["value"],"sanitize_html":true,"line_breaks":false,"header_links":false,"container":false,"padding":false,"name":"markdown","_selectable":false},"skip_api":false,"component_class_id":"b9287eb4cc7dd39b2efcc65a0f7e10a80937ecc47af8c48e3e59e379434bcd4b","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"# Hello!"},{"id":32,"type":"row","props":{"variant":"default","visible":true,"elem_classes":[],"equal_height":false,"show_progress":false,"preserved_by_key":[],"name":"row"},"skip_api":true,"component_class_id":"eabcdb6e01319bcbb5cd2571acad436f338207e16a5a44c78d4ab25743b68bc1","key":null},{"id":33,"type":"dropdown","props":{"choices":[["Python","Python"],["Java","Java"],["C","C"],["C++","C++"],["JavaScript","JavaScript"]],"value":"Python","type":"value","allow_custom_value":false,"filterable":true,"label":"Input Language","show_label":true,"container":true,"min_width":160,"visible":true,"elem_classes":[],"preserved_by_key":["value"],"buttons":[],"name":"dropdown","_selectable":false},"skip_api":false,"component_class_id":"cc61211225a7c061b7e144d037c84df836a5ee38ae38af43a93d8ea31912ef3b","key":null,"api_info":{"type":"string","enum":["Python","Java","C","C++","JavaScript"]},"api_info_as_input":{"type":"string","enum":["Python","Java","C","C++","JavaScript"]},"api_info_as_output":{"type":"string","enum":["Python","Java","C","C++","JavaScript"]},"example_inputs":"Python"},{"id":34,"type":"dropdown","props":{"choices":[["Python","Python"],["Java","Java"],["C","C"],["C++","C++"],["JavaScript","JavaScript"]],"value":"Python","type":"value","allow_custom_value":false,"filterable":true,"label":"Convert To","show_label":true,"container":true,"min_width":160,"visible":true,"elem_classes":[],"preserved_by_key":["value"],"buttons":[],"name":"dropdown","_selectable":false},"skip_api":false,"component_class_id":"cc61211225a7c061b7e144d037c84df836a5ee38ae38af43a93d8ea31912ef3b","key":null,"api_info":{"type":"string","enum":["Python","Java","C","C++","JavaScript"]},"api_info_as_input":{"type":"string","enum":["Python","Java","C","C++","JavaScript"]},"api_info_as_output":{"type":"string","enum":["Python","Java","C","C++","JavaScript"]},"example_inputs":"Python"},{"id":35,"type":"form","props":{"scale":2,"min_width":320,"preserved_by_key":[],"name":"form"},"skip_api":true,"component_class_id":"6c483f0ab1a0362f87e6c20dee79811b7eac7c89448ee675e585420e38a374bc","key":null},{"id":36,"type":"textbox","props":{"type":"text","lines":15,"label":"Enter Code","show_label":true,"container":true,"min_width":160,"visible":true,"autofocus":false,"autoscroll":true,"elem_classes":[],"preserved_by_key":["value"],"rtl":false,"buttons":[],"submit_btn":false,"stop_btn":false,"name":"textbox","_selectable":false},"skip_api":false,"component_class_id":"80436bf4626f1bc9b3cb9ffeb21cb9f4241bd2817d1afa483810db7a8b7b5e76","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"Hello!!"},{"id":37,"type":"textbox","props":{"type":"text","lines":15,"label":"Converted Code","show_label":true,"container":true,"min_width":160,"visible":true,"autofocus":false,"autoscroll":true,"elem_classes":[],"preserved_by_key":["value"],"rtl":false,"buttons":[],"submit_btn":false,"stop_btn":false,"name":"textbox","_selectable":false},"skip_api":false,"component_class_id":"80436bf4626f1bc9b3cb9ffeb21cb9f4241bd2817d1afa483810db7a8b7b5e76","key":null,"api_info":{"type":"string"},"api_info_as_input":{"type":"string"},"api_info_as_output":{"type":"string"},"example_inputs":"Hello!!"},{"id":38,"type":"button","props":{"value":"Convert","variant":"secondary","size":"lg","link_target":"_self","visible":true,"interactive":true,"elem_classes":[],"preserved_by_key":["value"],"name":"button","_selectable":false},"skip_api":true,"component_class_id":"f8a0745b5209d4f0ab7067901b44db1abb1e071668a646e54b0f4e03bc236c0c","key":null},{"id":39,"type":"form","props":{"scale":0,"min_width":0,"preserved_by_key":[],"name":"form"},"skip_api":true,"component_class_id":"6c483f0ab1a0362f87e6c20dee79811b7eac7c89448ee675e585420e38a374bc","key":null}],"css":null,"connect_heartbeat":false,"js":null,"head":null,"title":"Gradio","space_id":null,"enable_queue":true,"show_error":false,"footer_links":["api","gradio","settings"],"is_colab":false,"max_file_size":null,"stylesheets":["https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600\u0026display=swap"],"theme":"default","protocol":"sse_v3","body_css":{"body_background_fill":"white","body_text_color":"#27272a","body_background_fill_dark":"#0f0f11","body_text_color_dark":"#f4f4f5"},"fill_height":false,"fill_width":false,"theme_hash":"9c67fa08317f3b9a67ff3d434d2d7b2e5cd608719ba3870375a097fe38a96663","pwa":false,"pages":[["","Home",true]],"page":{"":{"layout":{"id":30,"children":[{"id":31},{"id":32,"children":[{"id":35,"children":[{"id":33},{"id":34}]}]},{"id":39,"children":[{"id":36},{"id":37}]},{"id":38}]},"components":[31,32,33,34,35,36,37,38,39],"dependencies":[0]}},"mcp_server":false,"i18n_translations":null,"dependencies":[{"id":0,"targets":[[38,"click"]],"inputs":[36,33,34],"outputs":[37],"backend_fn":true,"js":null,"queue":true,"api_name":"convert_code","api_description":null,"scroll_to_output":false,"show_progress":"full","show_progress_on":null,"batch":false,"max_batch_size":4,"cancels":[],"types":{"generator":false,"cancel":false},"collects_event_data":false,"trigger_after":null,"trigger_only_on_success":false,"trigger_only_on_failure":false,"trigger_mode":"once","api_visibility":"public","rendered_in":null,"render_id":null,"connection":"sse","time_limit":null,"stream_every":0.5,"event_specific_args":null,"component_prop_inputs":[],"js_implementation":null}],"layout":{"id":30,"children":[{"id":31},{"id":32,"children":[{"id":35,"children":[{"id":33},{"id":34}]}]},{"id":39,"children":[{"id":36},{"id":37}]},{"id":38}]},"username":null,"deep_link_state":"none","current_page":"","root":"http://127.0.0.1:7863"};</script><script>window.gradio_api_info = {"named_endpoints":{"/convert_code":{"parameters":[{"label":"Enter Code","parameter_name":"code","parameter_has_default":false,"parameter_default":null,"type":{"type":"string"},"python_type":{"type":"str","description":""},"component":"Textbox","example_input":"Hello!!"},{"label":"Input Language","parameter_name":"source_lang","parameter_has_default":true,"parameter_default":"Python","type":{"type":"string","enum":["Python","Java","C","C++","JavaScript"]},"python_type":{"type":"Literal[\u0027Python\u0027, \u0027Java\u0027, \u0027C\u0027, \u0027C++\u0027, \u0027JavaScript\u0027]","description":""},"component":"Dropdown","example_input":"Python"},{"label":"Convert To","parameter_name":"target_lang","parameter_has_default":true,"parameter_default":"Python","type":{"type":"string","enum":["Python","Java","C","C++","JavaScript"]},"python_type":{"type":"Literal[\u0027Python\u0027, \u0027Java\u0027, \u0027C\u0027, \u0027C++\u0027, \u0027JavaScript\u0027]","description":""},"component":"Dropdown","example_input":"Python"}],"returns":[{"label":"Converted Code","type":{"type":"string"},"python_type":{"type":"str","description":""},"component":"Textbox"}],"api_visibility":"public","description":"","code_snippets":{"python":"from gradio_client import Client\n\nclient = Client(\"http://127.0.0.1:7863\")\nresult = client.predict(\n\tcode=\"Hello!!\",\n\tsource_lang=\"Python\",\n\ttarget_lang=\"Python\",\n\tapi_name=\"/convert_code\",\n)\nprint(result)","javascript":"import { Client } from \"@gradio/client\";\n\nconst client = await Client.connect(\"http://127.0.0.1:7863\");\nconst result = await client.predict(\"/convert_code\", {\n\t\tcode: \"Hello!!\",\n\t\tsource_lang: \"Python\",\n\t\ttarget_lang: \"Python\",\n});\n\nconsole.log(result.data);","bash":"curl -X POST http://127.0.0.1:7863/gradio_api/call/convert_code -s -H \"Content-Type: application/json\" -d \u0027{\"data\": [\"Hello!!\", \"Python\", \"Python\"]}\u0027 \\\n  | awk -F\u0027\"\u0027 \u0027{ print $4}\u0027 \\\n  | read EVENT_ID; curl -N http://127.0.0.1:7863/gradio_api/call/convert_code/$EVENT_ID"}}},"unnamed_endpoints":{}};</script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com/">
+		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="anonymous">
+		<script src="./iframeResizer.contentWindow.min.js.download" async=""></script>
+		<script data-gradio-mode="">
+			window.__gradio_mode__ = "app";
+			window.iFrameResizer = {
+				autoResize: false,
+				sizeWidth: false
+			};
+			window.parent?.postMessage(
+				{ type: "SET_SCROLLING", enabled: false },
+				"*"
+			);
+		</script>
+		<link rel="manifest" href="http://127.0.0.1:7863/manifest.json">
+		<script type="module" crossorigin="" src="./index-xGeN4i2A.js.download"></script>
+		<link rel="stylesheet" crossorigin="" href="./index-BsFpDktE.css">
+	<link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/Index-DeZ9OoP9.js"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/i18n-CeTBXmsd.js"><link rel="stylesheet" crossorigin="" href="./i18n-0fQIB-A-.css"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/StreamingBar-m3Ywvutz.js"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/ScrollFade-B34EcSMi.js"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/MarkdownCode-CEyGWpPm.js"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/prism-python-BSSAvU0Z.js"><link rel="stylesheet" crossorigin="" href="./MarkdownCode-DMB6WInP.css"><link rel="stylesheet" crossorigin="" href="./ScrollFade-BZk4ILxO.css"><link rel="stylesheet" crossorigin="" href="./StreamingBar-K0YZHDYh.css"><link rel="stylesheet" crossorigin="" href="./Index-CI7BqPz-.css"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/index-DQBKLrjg.js"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/init.svelte-DAyvcXAa.js"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/index-tFQomdd2.js"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/utils.svelte-D2llzkGs.js"><script type="text/path" charset="UTF-8" src="chrome-extension://giidlnpcdhcldhfccdhkaicefhpokghc/wscbundle/wscbundle.js"></script><link rel="stylesheet" type="text/css" href="chrome-extension://giidlnpcdhcldhfccdhkaicefhpokghc/wscbundle/themes/all.css"><link rel="stylesheet" href="./theme.css"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/Blocks-028kawV9.js"><link rel="modulepreload" as="script" crossorigin="" href="./index-xGeN4i2A.js.download"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/state.svelte-DFm6rEHb.js"><link rel="stylesheet" crossorigin="" href="./Blocks-CXVCGwNW.css"><link rel="stylesheet" href="./css2"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/Index-nybXhGE1.js"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/Index.svelte_svelte_type_style_lang-l5w5VPA-.js"><link rel="stylesheet" crossorigin="" href="./Index-BDcHJDzf.css"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/Index-B3r9ymOg.js"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/Example-C3Yzi7XT.js"><link rel="stylesheet" crossorigin="" href="./Example-CgIc4GLa.css"><link rel="stylesheet" crossorigin="" href="./Index-cY7HT1Ac.css"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/Index-Dv9bfHjj.js"><link rel="stylesheet" crossorigin="" href="./Index-BijVyRsD.css"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/Index-jKpNRKe9.js"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/BaseForm-Bl4pgwpK.js"><link rel="stylesheet" crossorigin="" href="./BaseForm-DJxyhkeW.css"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/Index-DWkRKRV2.js"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/Example-BY9hq5K4.js"><link rel="stylesheet" crossorigin="" href="./Example-BeU1J4ps.css"><link rel="stylesheet" crossorigin="" href="./Index--Uz_kS2s.css"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/Index-Vok_yGPE.js"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/Example-gF45j9DF.js"><link rel="stylesheet" crossorigin="" href="./Example-Cvv6PwrD.css"><link rel="stylesheet" crossorigin="" href="./Index-B5AH0EoL.css"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/Index-BGufUumZ.js"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/Button-BJsA1KHL.js"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/Image-Bdf4wQSw.js"><link rel="stylesheet" crossorigin="" href="./Image-Da_XA0w6.css"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/ImagePreview-CGDQGY91.js"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/ShareButton-CF18F0V0.js"><link rel="modulepreload" as="script" crossorigin="" href="http://127.0.0.1:7863/assets/FullscreenButton-DrvnVVOX.js"><link rel="stylesheet" crossorigin="" href="./ImagePreview-CCVfwC4m.css"><link rel="stylesheet" crossorigin="" href="./Button-BZ4d-rtD.css"><!----><!----> <!----><title>Gradio</title></head>
+
+	<body style="
+			width: 100%;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			flex-grow: 1;
+		">
+		<gradio-app control_page_title="true" embed="false" eager="true" style="display: flex; flex-direction: column; flex-grow: 1; background: var(--body-background-fill);">
+		<div data-iframe-height="" class="gradio-container gradio-container-6-8-0 svelte-99kmwu" style="min-height: initial; flex-grow: 1;"><!----> <div class="main fillable svelte-99kmwu app"><!----><!----><!----> <!----><div class="wrap svelte-zxu34v" style="min-height: 100%;"><main class="contain svelte-zxu34v" style="flex-grow: 1; margin-right: 0px;"><!----><!----><!----><div id="" class="column  svelte-siq5d6" style="min-width: min(0px, 100%);"><!----> <!----><!----><!----><!----><!----><!----><!----><!----><div id="" class="block  svelte-1plpy97 padded hide-container auto-margin" dir="ltr" style="--start-top: 0px; --start-left: 0px; --start-width: 0px; --start-height: 0px; border-style: solid; overflow: auto; min-width: min(0px, 100%);"><!----><!----><div data-testid="status-tracker" class="wrap center full svelte-1uj8rng hide" style="position: absolute; padding: 0px;"><!----> <!----><!----></div><!----> <div class="svelte-16ln60g"><div data-testid="markdown" class="prose  svelte-1xjkzpp" dir="ltr"><!----> <span class="md svelte-1hf8a14 prose"><h2>LLM Code Converter</h2>
+<!----></span><!----></div><!----></div> <!----><!----><!----> <!----></div><!----> <!----><!----><!----><!----><div class="row  svelte-7xavid unequal-height"><!----> <!----><!----><!----><!----><!----><div class="form svelte-d5xbca" style="flex-grow: 2; min-width: min(320px, 100%);"><!----><!----><!----><!----><!----><!----><!----><!----><div id="" class="block  svelte-1plpy97 padded auto-margin" dir="ltr" style="--start-top: 0px; --start-left: 0px; --start-width: 0px; --start-height: 0px; border-style: solid; overflow: hidden; min-width: min(160px, 100%);"><!----><!----><div data-testid="status-tracker" class="wrap default full svelte-1uj8rng hide" style="position: absolute; padding: 0px;"><!----> <!----><!----></div><!----> <div class="svelte-1xfsv4t container"><!----> <span data-testid="block-info" dir="ltr" class="svelte-jdcl7l">Input Language<!----></span> <!----><!----> <div class="wrap svelte-1xfsv4t"><div class="wrap-inner svelte-1xfsv4t"><div class="secondary-wrap svelte-1xfsv4t"><input role="listbox" aria-controls="dropdown-options" autocomplete="off" aria-expanded="false" aria-label="Input Language" class="border-none svelte-1xfsv4t" fdprocessedid="3cq4dc"> <div class="icon-wrap svelte-1xfsv4t"><svg class="dropdown-arrow svelte-loyhyk" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 18 18"><path d="M5 8l4 4 4-4z"></path></svg><!----></div><!----></div></div> <div class="reference"></div> <!----><!----></div></div><!----><!----> <!----></div><!----> <!----><!----><!----><!----><!----><!----><div id="" class="block  svelte-1plpy97 padded auto-margin" dir="ltr" style="--start-top: 0px; --start-left: 0px; --start-width: 0px; --start-height: 0px; border-style: solid; overflow: hidden; min-width: min(160px, 100%);"><!----><!----><div data-testid="status-tracker" class="wrap default full svelte-1uj8rng hide" style="position: absolute; padding: 0px;"><!----> <!----><!----></div><!----> <div class="svelte-1xfsv4t container"><!----> <span data-testid="block-info" dir="ltr" class="svelte-jdcl7l">Convert To<!----></span> <!----><!----> <div class="wrap svelte-1xfsv4t"><div class="wrap-inner svelte-1xfsv4t"><div class="secondary-wrap svelte-1xfsv4t"><input role="listbox" aria-controls="dropdown-options" autocomplete="off" aria-expanded="false" aria-label="Convert To" class="border-none svelte-1xfsv4t" fdprocessedid="dmxafj"> <div class="icon-wrap svelte-1xfsv4t"><svg class="dropdown-arrow svelte-loyhyk" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 18 18"><path d="M5 8l4 4 4-4z"></path></svg><!----></div><!----></div></div> <div class="reference"></div> <!----><!----></div></div><!----><!----> <!----></div><!----> <!----><!----></div><!----></div><!----><!----><!----><div class="form svelte-d5xbca" style="flex-grow: 0; min-width: min(0px, 100%);"><!----><!----><!----><!----><!----><!----><!----><!----><div id="" class="block  svelte-1plpy97 padded auto-margin" dir="ltr" style="--start-top: 0px; --start-left: 0px; --start-width: 0px; --start-height: 0px; border-style: solid; overflow: hidden; min-width: min(160px, 100%);"><!----><!----><div data-testid="status-tracker" class="wrap default full svelte-1uj8rng hide" style="position: absolute; padding: 0px;"><!----> <!----><!----></div><!----> <label class="svelte-1hguek3 container show_textbox_border"><!----> <span data-testid="block-info" dir="ltr" class="svelte-jdcl7l">Enter Code <!----><!----></span> <!----><!----> <div class="input-container svelte-1hguek3"><textarea data-testid="textbox" dir="ltr" placeholder="" rows="15" class="svelte-1hguek3" style="height: 314px; overflow-y: hidden;"></textarea><!----> <!----> <!----></div></label><!----><!----> <!----></div><!----> <!----><!----><!----><!----><!----><!----><div id="" class="block  svelte-1plpy97 padded auto-margin" dir="ltr" style="--start-top: 0px; --start-left: 0px; --start-width: 0px; --start-height: 0px; border-style: solid; overflow: hidden; min-width: min(160px, 100%);"><!----><!----><div data-testid="status-tracker" class="wrap default full svelte-1uj8rng hide" style="position: absolute; padding: 0px;"><!----> <!----><!----></div><!----> <label class="svelte-1hguek3 container show_textbox_border"><!----> <span data-testid="block-info" dir="ltr" class="svelte-jdcl7l">Converted Code <!----><!----></span> <!----><!----> <div class="input-container svelte-1hguek3"><textarea data-testid="textbox" dir="ltr" placeholder="" rows="15" disabled="" class="svelte-1hguek3" style="height: 412px; overflow-y: scroll;"></textarea><!----> <!----> <!----></div></label><!----><!----> <!----></div><!----> <!----><!----></div><!----><!----><!----><!----><button class="lg secondary  svelte-xzq5jh" fdprocessedid="a6xwq"><!----> <!---->Convert<!----></button><!----></div><!----></main> <footer aria-label="Gradio footer navigation" class="svelte-zxu34v"><button class="show-api svelte-zxu34v">Use via API<!----> <img class="svelte-zxu34v" src="data:image/svg+xml,%3csvg%20width=&#39;28&#39;%20height=&#39;28&#39;%20viewBox=&#39;0%200%2028%2028&#39;%20fill=&#39;none&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3cpath%20fill-rule=&#39;evenodd&#39;%20clip-rule=&#39;evenodd&#39;%20d=&#39;M26.9425%202.94265C27.4632%202.42195%2027.4632%201.57773%2026.9425%201.05703C26.4218%200.536329%2025.5776%200.536329%2025.0569%201.05703L22.5713%203.54256C21.1213%202.59333%2019.5367%202.43378%2018.1753%202.64006C16.5495%202.88638%2015.1127%203.66838%2014.3905%204.39053L12.3905%206.39053C12.1405%206.64058%2012%206.97972%2012%207.33334C12%207.68697%2012.1405%208.0261%2012.3905%208.27615L19.7239%2015.6095C20.2446%2016.1302%2021.0888%2016.1302%2021.6095%2015.6095L23.6095%2013.6095C24.3316%2012.8873%2025.1136%2011.4505%2025.36%209.82475C25.5663%208.46312%2025.4066%206.87827%2024.4571%205.42807L26.9425%202.94265Z&#39;%20fill=&#39;%233c4555&#39;/%3e%3cpath%20fill-rule=&#39;evenodd&#39;%20clip-rule=&#39;evenodd&#39;%20d=&#39;M12.276%2012.9426C12.7967%2012.4219%2012.7967%2011.5777%2012.276%2011.057C11.7553%2010.5363%2010.9111%2010.5363%2010.3904%2011.057L8.66651%2012.7809L8.27615%2012.3905C8.0261%2012.1405%207.68697%2012%207.33334%2012C6.97972%2012%206.64058%2012.1405%206.39053%2012.3905L4.39053%2014.3905C3.66838%2015.1127%202.88638%2016.5495%202.64006%2018.1753C2.43377%2019.5367%202.59333%2021.1214%203.54262%2022.5714L1.05703%2025.057C0.536329%2025.5777%200.536329%2026.4219%201.05703%2026.9426C1.57773%2027.4633%202.42195%2027.4633%202.94265%2026.9426L5.42817%2024.4571C6.87835%2025.4066%208.46315%2025.5663%209.82475%2025.36C11.4505%2025.1136%2012.8873%2024.3316%2013.6095%2023.6095L15.6095%2021.6095C16.1302%2021.0888%2016.1302%2020.2446%2015.6095%2019.7239L15.2188%2019.3332L16.9426%2017.6093C17.4633%2017.0886%2017.4633%2016.2444%2016.9426%2015.7237C16.4219%2015.203%2015.5777%2015.203%2015.057%2015.7237L13.3332%2017.4475L10.5521%2014.6665L12.276%2012.9426Z&#39;%20fill=&#39;%23FF7C00&#39;/%3e%3c/svg%3e" alt="logo"></button><!----> <div class="divider show-api-divider svelte-zxu34v">·</div> <a href="https://gradio.app/" class="built-with svelte-zxu34v" target="_blank" rel="noreferrer">Built with Gradio <img class="svelte-zxu34v" src="data:image/svg+xml,%3csvg%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20width=&#39;576&#39;%20height=&#39;576&#39;%20viewBox=&#39;0%200%20576%20576&#39;%20fill=&#39;none&#39;%3e%3cpath%20d=&#39;M287.5%20229L86%20344.5L287.5%20460L489%20344.5L287.5%20229Z&#39;%20stroke=&#39;url(%23paint0_linear_102_7)&#39;%20stroke-width=&#39;59&#39;%20stroke-linejoin=&#39;round&#39;/%3e%3cpath%20d=&#39;M287.5%20116L86%20231.5L287.5%20347L489%20231.5L287.5%20116Z&#39;%20stroke=&#39;url(%23paint1_linear_102_7)&#39;%20stroke-width=&#39;59&#39;%20stroke-linejoin=&#39;round&#39;/%3e%3cpath%20d=&#39;M86%20344L288%20229&#39;%20stroke=&#39;url(%23paint2_linear_102_7)&#39;%20stroke-width=&#39;59&#39;%20stroke-linejoin=&#39;bevel&#39;/%3e%3cdefs%3e%3clinearGradient%20id=&#39;paint0_linear_102_7&#39;%20x1=&#39;60&#39;%20y1=&#39;341&#39;%20x2=&#39;429.5&#39;%20y2=&#39;344&#39;%20gradientUnits=&#39;userSpaceOnUse&#39;%3e%3cstop%20stop-color=&#39;%23F9D100&#39;/%3e%3cstop%20offset=&#39;1&#39;%20stop-color=&#39;%23F97700&#39;/%3e%3c/linearGradient%3e%3clinearGradient%20id=&#39;paint1_linear_102_7&#39;%20x1=&#39;513.5&#39;%20y1=&#39;231&#39;%20x2=&#39;143.5&#39;%20y2=&#39;231&#39;%20gradientUnits=&#39;userSpaceOnUse&#39;%3e%3cstop%20stop-color=&#39;%23F9D100&#39;/%3e%3cstop%20offset=&#39;1&#39;%20stop-color=&#39;%23F97700&#39;/%3e%3c/linearGradient%3e%3clinearGradient%20id=&#39;paint2_linear_102_7&#39;%20x1=&#39;60&#39;%20y1=&#39;344&#39;%20x2=&#39;428.987&#39;%20y2=&#39;341.811&#39;%20gradientUnits=&#39;userSpaceOnUse&#39;%3e%3cstop%20stop-color=&#39;%23F9D100&#39;/%3e%3cstop%20offset=&#39;1&#39;%20stop-color=&#39;%23F97700&#39;/%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e" alt="logo"></a><!----> <button class="record svelte-zxu34v hidden">Stop Recording <img class="svelte-zxu34v" src="data:image/svg+xml,%3csvg%20viewBox=&#39;0%200%2020%2020&#39;%20version=&#39;1.1&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%20xmlns:xlink=&#39;http://www.w3.org/1999/xlink&#39;%20fill=&#39;%23000000&#39;%3e%3cg%20id=&#39;SVGRepo_bgCarrier&#39;%20stroke-width=&#39;0&#39;%3e%3c/g%3e%3cg%20id=&#39;SVGRepo_tracerCarrier&#39;%20stroke-linecap=&#39;round&#39;%20stroke-linejoin=&#39;round&#39;%3e%3c/g%3e%3cg%20id=&#39;SVGRepo_iconCarrier&#39;%3e%3ctitle%3erecord%20[%23982]%3c/title%3e%3cdesc%3eCreated%20with%20Sketch.%3c/desc%3e%3cdefs%3e%3c/defs%3e%3cg%20id=&#39;Page-1&#39;%20stroke=&#39;none&#39;%20stroke-width=&#39;1&#39;%20fill=&#39;none&#39;%20fill-rule=&#39;evenodd&#39;%3e%3cg%20id=&#39;Dribbble-Light-Preview&#39;%20transform=&#39;translate(-380.000000,%20-3839.000000)&#39;%20fill=&#39;%23FF0000&#39;%3e%3cg%20id=&#39;icons&#39;%20transform=&#39;translate(56.000000,%20160.000000)&#39;%3e%3cpath%20d=&#39;M338,3689%20C338,3691.209%20336.209,3693%20334,3693%20C331.791,3693%20330,3691.209%20330,3689%20C330,3686.791%20331.791,3685%20334,3685%20C336.209,3685%20338,3686.791%20338,3689%20M334,3697%20C329.589,3697%20326,3693.411%20326,3689%20C326,3684.589%20329.589,3681%20334,3681%20C338.411,3681%20342,3684.589%20342,3689%20C342,3693.411%20338.411,3697%20334,3697%20M334,3679%20C328.477,3679%20324,3683.477%20324,3689%20C324,3694.523%20328.477,3699%20334,3699%20C339.523,3699%20344,3694.523%20344,3689%20C344,3683.477%20339.523,3679%20334,3679&#39;%20id=&#39;record-[%23982]&#39;%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="Stop Recording"></button> <div class="divider svelte-zxu34v">·</div> <div class="divider svelte-zxu34v hidden">·</div> <button class="settings svelte-zxu34v" fdprocessedid="qx562c">Settings <img class="svelte-zxu34v" src="data:image/svg+xml,%3csvg%20width=&#39;24&#39;%20height=&#39;24&#39;%20viewBox=&#39;0%200%2024%2024&#39;%20xmlns=&#39;http://www.w3.org/2000/svg&#39;%3e%3c!--%20Outer%20gear%20teeth%20(gray)%20--%3e%3cpath%20d=&#39;M19.14%2012.94c.04-.3.06-.61.06-.94%200-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24%200-.43.17-.47.41l-.36%202.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47%200-.59.22L2.74%208.87c-.12.21-.08.47.12.61l2.03%201.58c-.05.3-.07.62-.07.94s.02.64.07.94l-2.03%201.58c-.18.14-.23.41-.12.61l1.92%203.32c.12.22.37.29.59.22l2.39-.96c.5.38%201.03.7%201.62.94l.36%202.54c.05.24.24.41.48.41h3.84c.24%200%20.44-.17.47-.41l.36-2.54c.59-.24%201.13-.56%201.62-.94l2.39.96c.22.08.47%200%20.59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12%2015.6c-1.98%200-3.6-1.62-3.6-3.6s1.62-3.6%203.6-3.6%203.6%201.62%203.6%203.6-1.62%203.6-3.6%203.6z&#39;%20fill=&#39;%23808080&#39;/%3e%3c!--%20Inner%20circle%20(now%20gray)%20--%3e%3ccircle%20cx=&#39;12&#39;%20cy=&#39;12&#39;%20r=&#39;2.5&#39;%20fill=&#39;%23808080&#39;/%3e%3c/svg%3e" alt="Settings"></button><!----></footer><!----> <!----> <!----> <!----> <!----></div> <div class="toast-wrap svelte-1qhecvt" style="--toast-top: 0px;"></div><!----><!----><!----> <div><!----></div></div></div></gradio-app>
+		<script>
+			const ce = document.getElementsByTagName("gradio-app");
+
+			if (ce[0]) {
+				ce[0].addEventListener("domchange", () => {
+					document.body.style.padding = "0";
+				});
+				document.body.style.padding = "0";
+			}
+		</script>
+	
+<fms-fly-app data-fms-version="3.7.8" id="fly-msg-app"><template shadowrootmode="open"><style>
+      @import "chrome-extension://giidlnpcdhcldhfccdhkaicefhpokghc/css/style.css";
+      @import "chrome-extension://giidlnpcdhcldhfccdhkaicefhpokghc/css/themes/main.css";
+      @import "chrome-extension://giidlnpcdhcldhfccdhkaicefhpokghc/css/root.css";
+      @import "chrome-extension://giidlnpcdhcldhfccdhkaicefhpokghc/css/fms.css";
+      @import "chrome-extension://giidlnpcdhcldhfccdhkaicefhpokghc/css/grammar.css";
+      @import "chrome-extension://giidlnpcdhcldhfccdhkaicefhpokghc/css/write.css";
+      @import "chrome-extension://giidlnpcdhcldhfccdhkaicefhpokghc/css/linkedin.css";
+      @import "chrome-extension://giidlnpcdhcldhfccdhkaicefhpokghc/wscBundle/css/wsc.css";
+      @import "chrome-extension://giidlnpcdhcldhfccdhkaicefhpokghc/wscBundle/themes/all.css";
+
+      #fms-dialog {
+        padding: 0;
+        border: none;
+        margin: 0;
+        background: transparent;
+        max-width: none;
+        max-height: none;
+        width: 100vw;
+        height: 100vh;
+        overflow: visible;
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 2147483647;
+      }
+      #fms-dialog > * {
+        pointer-events: auto;
+      }
+      #fms-dialog[data-fms-modal="true"] {
+        pointer-events: auto;
+      }
+      #fms-dialog[data-fms-modal="true"]::backdrop {
+        background: transparent;
+      }
+
+      #fms-tooltip-host {
+        padding: 0;
+        border: none;
+        margin: 0;
+        background: transparent;
+        max-width: none;
+        max-height: none;
+        width: 100vw;
+        height: 100vh;
+        overflow: visible;
+        position: fixed;
+        inset: 0;
+        pointer-events: none;
+        z-index: 2147483647;
+      }
+      #fms-tooltip-host > * {
+        pointer-events: auto;
+      }
+
+      * {
+        font-family: Arial, sans-serif;
+        color: #222;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: none;
+        background: none;
+      }
+
+      *,
+      input,
+      textarea,
+      select {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        color: inherit;
+      }
+
+      h1 {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      h2 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      h3 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      h4 {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      h5 {
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+      h6 {
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      p {
+        font-size: 14px;
+        line-height: 1.6;
+      }
+    </style><dialog id="fms-dialog" data-fms-modal="false" open=""><div></div></dialog><div id="fms-tooltip-host"></div></template></fms-fly-app><span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
